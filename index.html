@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      ;(() => {
+        try {
+          const saved = localStorage.getItem('riksport-theme')
+          const theme = saved === 'light' || saved === 'dark'
+            ? saved
+            : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          document.documentElement.dataset.theme = theme
+          document.documentElement.style.colorScheme = theme
+        } catch {
+          document.documentElement.dataset.theme = 'light'
+        }
+      })()
+    </script>
+    <title>Riksport+ — Premium Outdoor Equipment</title>
+    
+    <meta name="description" content="Discover premium automotive accessories and outdoor equipment with a visually stunning e-commerce platform designed for seamless product exploration and purchase.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="/riksport-preview/favicon.svg">
+    <meta property="og:title" content="Riksport+ — Premium Outdoor Equipment">
+    <meta property="og:description" content="Discover premium automotive accessories and outdoor equipment with a visually stunning e-commerce platform designed for seamless product exploration and purchase.">
+    <script type="module" crossorigin src="/riksport-preview/assets/index-zS0-mcb9.js"></script>
+    <link rel="stylesheet" crossorigin href="/riksport-preview/assets/index-b7BFmtug.css">
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    
+  </body>
+</html>
